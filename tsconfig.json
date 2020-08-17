@@ -1,0 +1,27 @@
+{
+  "extends": "./node_modules/@tsconfig/svelte/tsconfig.json",
+  "lib": [
+    "es2019"
+  ],
+  "include": [
+    "api/**/*",
+    "src/**/*",
+    "src/node_modules"
+  ],
+  "exclude": [
+    "node_modules/*",
+    "__sapper__/*",
+    "public/*"
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "preserve"
+  }
+}
