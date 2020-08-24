@@ -11,7 +11,7 @@ import del from 'del'
 import typescript from 'typescript'
 
 const staticDir = 'static'
-const distDir = 'dist'
+const distDir = 'public'
 const buildDir = `${distDir}/build`
 const production = !process.env.ROLLUP_WATCH
 const bundling = process.env.BUNDLING || production ? 'dynamic' : 'bundle'
